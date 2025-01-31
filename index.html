@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- daisyUI and tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,6 +25,10 @@
     <style>
         .sora-font {
             font-family: "Sora", serif;
+        }
+
+        .poppins-font {
+            font-family: "Poppins", serif;
         }
     </style>
     <script>
@@ -39,7 +48,7 @@
 
 <body class="sora-font">
     <!-- header section -->
-    <header class="w-10/12 mx-auto">
+    <header class="w-full lg:w-10/12 mx-auto">
         <!-- navber -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -78,10 +87,11 @@
                 </div>
             </div>
         </div>
+        <div class="h-[1px] w-full bg-btn-bg mb-12 lg:hidden"></div>
         <!-- banner section -->
         <div class="hero min-h-screen">
             <div class="hero-content flex-col text-center">
-                <div class="mt-8 lg:mt-20">
+                <div class="mt-2 lg:mt-20">
                     <h1 class="text-2xl lg:text-5xl font-bold">Freshness <span class="text-[#179800]">You Can <br>
                             Count</span> On, Prices You’ll Love!</h1>
                     <p class="py-6">
@@ -94,45 +104,211 @@
         </div>
     </header>
     <!-- main section -->
-    <main class="w-10/12 mx-auto">
+    <main class="">
         <!-- Services section -->
-        <section class="my-10 lg:my-24">
+        <section class="my-10 mx-auto lg:my-24 w-10/12 ">
             <h1 class="text-xl lg:text-3xl font-bold text-[#179800] lg:mb-11 mb-6">Services</h1>
             <!-- cards -->
             <div class="flex flex-col gap-3 lg:justify-between lg:flex-row">
                 <!-- card 1 -->
                 <div class="card bg-base-300 lg:w-96 w-80">
                     <figure class="px-10 pt-10">
-                        <img src="images/service.png" alt="service" />
+                        <img class="bg-white rounded-full p-5" src="images/service.png" alt="service" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">24/7 Services </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <h2 class="card-title">24/7 Services</h2>
+                        <p>We are available around the clock to meet your needs. Whether it's day or night, our team is
+                            ready to assist you anytime, ensuring fast and reliable service.</p>
                     </div>
                 </div>
                 <!-- card 2 -->
                 <div class="card bg-base-300 lg:w-96 w-80">
                     <figure class="px-10 pt-10">
-                        <img src="images/delivery.png" alt="delivery" />
+                        <img class="bg-white rounded-full p-5" src="images/delivery.png" alt="delivery" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">24/7 Services </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <h2 class="card-title">Fast Delivery</h2>
+                        <p>We ensure quick and efficient delivery, getting your orders to you on time, every time. Enjoy
+                            a hassle-free experience with our reliable service!</p>
                     </div>
                 </div>
                 <!-- card 3 -->
                 <div class="card bg-base-300 lg:w-96 w-80">
                     <figure class="px-10 pt-10">
-                        <img src="images/healthy.png" alt="healthy" />
+                        <img class="bg-white rounded-full p-5" src="images/healthy.png" alt="healthy" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">24/7 Services </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <h2 class="card-title">Healthy Products</h2>
+                        <p>Our products are made with high-quality, natural ingredients to support your well-being.
+                            Enjoy a healthier lifestyle with our carefully selected items!</p>
                     </div>
                 </div>
             </div>
 
         </section>
+        <!-- Popular Products section -->
+        <section class="bg-base-300 py-10">
+            <div class="my-10 mx-auto lg:my-24 w-10/12 ">
+                <h1 class="text-xl lg:text-3xl font-bold text-[#179800] lg:mb-11 mb-6">Popular Products</h1>
+
+                <div class="flex flex-col gap-5 lg:flex-row lg:justify-between ">
+                    <!-- left side -->
+                    <div class="bg-gradient-to-br from-green-500 to-green-200 lg:w-[35%] pt-12 pl-8 rounded-lg">
+                        <div class="space-y-3 lg:space-y-5">
+                            <h3 class="text-xl lg:text-3xl text-white font-semibold ">30% off</h3>
+                            <p>Discover a world of treats, toys and essential handpicked for</p>
+                            <button class="btn  text-base lg:text-xl font-normal lg:px-10 px-4 bg-white
+                    ">Buy Now</button>
+                        </div>
+                        <div><img class="ms-auto lg:-mt-20 -mt-12 lg:w-[270px] w-[170px]"
+                                src="images/vegetable-offer.png" alt=""></div>
+                    </div>
+                    <!-- right side -->
+                    <div class="lg:w-[63%] grid lg:grid-cols-3 grid-cols-2 lg:gap-5 gap-3">
+                        <!-- card 1 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/onion.png" alt="onion"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400 "></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Onion 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/potato.png" alt="potato"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Potato 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$45.99</p>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/tomato.png" alt="tomato"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Tomato 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$40.99</p>
+                            </div>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/tomato.png" alt="tomato"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Tomato 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$40.99</p>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/onion.png" alt="onion"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Onion 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
+                        <!-- card 6 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/potato.png" alt="potato"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Potato 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$45.99</p>
+                            </div>
+                        </div>
+                        <!-- card 7 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/potato.png" alt="potato"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Potato 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$45.99</p>
+                            </div>
+                        </div>
+                        <!-- card 8 -->
+                        <div class="bg-white flex justify-around rounded-lg items-center lg:py-0 py-2">
+                            <div><img class="w-12 lg:w-20" src="images/tomato.png" alt="tomato"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Tomato 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$40.99</p>
+                            </div>
+                        </div>
+                        <!-- card 9 -->
+                        <div
+                            class="bg-white lg:flex justify-around rounded-lg items-center lg:py-0 py-2 md:block hidden">
+                            <div><img class="w-12 lg:w-20" src="images/onion.png" alt="onion"></div>
+                            <div>
+                                <p class="text-xs lg:text-lg"><i class="fa-solid fa-star text-orange-400"></i> 4.5</p>
+                                <h2 class="text-sm lg:text-xl font-bold">Onion 1 KG</h2>
+                                <p class="text-xs font-medium lg:text-lg">$39.99</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Arrival & Offers section -->
+        <section class="my-10 mx-auto lg:my-24 w-10/12 poppins-font">
+            <h1 class="text-xl lg:text-3xl font-bold text-[#179800] lg:mb-11 mb-6">Arrival & Offers</h1>
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between ">
+                <!-- left side -->
+                <div class="flex justify-between bg-[#115414] lg:w-[59%] lg:p-6 p-3 rounded-xl ">
+                    <div class="flex flex-col justify-start items-center lg:pt-8 pt-2 lg:space-y-8 space-y-2">
+                        <!-- content -->
+                        <div>
+                            <div><img src="images/dawat-logo.png" alt=""></div>
+                        </div>
+                        <div>
+                            <h3
+                                class="bg-[#63B76D] border-none text-white lg:py-3 py-2 rounded-lg lg:px-6 px-2 text-[10px] lg:text-[16px]">
+                                Cook Exotic Dishes</h3>
+                        </div>
+                        <div>
+                            <h1 class="lg:text-2xl text-sm text-white">UP to <span class=" font-bold">20% OFF</span>
+                            </h1>
+                        </div>
+
+                    </div>
+                    <!-- image -->
+                    <div>
+                        <img src="images/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="flex justify-between bg-[#102861] lg:w-[40%] lg:p-6 p-3 rounded-xl ">
+                    <div class="flex flex-col justify-start items-start pt-5 lg:space-y-3 space-y-2">
+                        <!-- content -->
+                        <div>
+                            <div><img src="images/india-gate-logo.png" alt=""></div>
+                        </div>
+                        <div>
+                            <h3
+                                class="bg-[#2A4D97] border-none text-white lg:py-3 py-2 rounded-lg lg:px-6 px-2 text-[10px] lg:text-[16px]">
+                                World’s No.1 Rice</h3>
+                        </div>
+                        <div>
+                            <h1 class="lg:text-2xl text-sm text-white">UP to <span class=" font-bold">40% OFF</span>
+                            </h1>
+                        </div>
+
+                    </div>
+                    <!-- image -->
+                    <div>
+                        <img src="images/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--  -->
+
 
     </main>
     <!-- footer section -->
