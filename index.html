@@ -54,7 +54,8 @@
             <div class="navbar-start">
 
                 <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
-                <img src="images/logo-header.png" alt="">
+                <img class="lg:block hidden" src="images/logo-header.png" alt="logo">
+                <img src="images/sm-logo.png" alt="logo">
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -344,12 +345,30 @@
 
             </div>
         </section>
-    <!--  -->
+        <!-- Grocery News section -->
+        <div class="relative -mb-72">
+            <section class="my-10 mx-auto lg:my-24 w-10/12 bg-base-300 py-10 rounded-lg ">
+                <div class="flex lg:justify-around lg:flex-row flex-col gap-3 items-center">
+                    <div>
+                        <img src="images/vegetable-busket.png" alt="">
+                    </div>
+                    <div class="lg:space-y-4 space-y-2 lg:text-start text-center">
+                        <h1 class="text-xl text-[#179800] lg:text-black lg:text-3xl font-bold">Get Grocery News!</h1>
+                        <p>Exclusive training tips, ticks, product deals and more.</p>
+
+                        <div><input class="border p-3 lg:w-96 w-72 bg-white rounded-lg text-sm" type="text"
+                                placeholder="Enter email...."></div>
+                        <div><button class="btn bg-btn-bg text-white">Subscribe</button></div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
 
     </main>
     <!-- footer section -->
     <footer class="footer bg-[#179800]">
-        <div class="flex flex-col lg:flex-row lg:justify-between w-10/12 mx-auto lg:py-24 py-10">
+        <div class="flex flex-col lg:flex-row lg:justify-between w-10/12 mx-auto lg:pt-64 pb-16 pt-72 ">
             <aside>
                 <img src="images/logo-footer.png" alt="">
                 <p class="text-white mt-4">
